@@ -55,6 +55,12 @@
 		".line-numbers.lh-even":"width:0!important;left:10px!important;",
 		".glyph-margin-widgets":"display:none;",
 		".monaco-editor .glyph-margin":"left:-100%;",
+		".quick-input-widget":"margin-top: 15%;box-shadow: rgba(0, 0, 0, .40) 0px 0px 70px 4px !important;",
+		"div.quick-input-box > div > div.monaco-inputbox.idle > div > input":"background-color:#2E3440 !important;padding:15px;font-size:20px;border-radius:10px;",
+		".monaco-inputbox.idle":"background-color:#2E3440 !important;border: none !important;outline-color:#81A1C1 !important;",
+		".monaco-list-row.focused":"background-color: #81A1C1 !important;",
+		"div.slider":"display:none !important",
+		"quick-input-list-row":"align-items:center;text-align:center;"
 	},
 
 	"rust-analyzer.lens.run.enable": false,
@@ -114,6 +120,5 @@
 	"editor.codeActionWidget.includeNearbyQuickFixes": false,
 	"github.copilot.editor.enableAutoCompletions": true,
 	"editor.minimap.enabled": false,
-	
-
+	"accessibility.hideAccessibleView": true
 }
