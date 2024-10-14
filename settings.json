@@ -82,13 +82,6 @@
 	"codesnap.showWindowTitle": true,
 	"codesnap.showLineNumbers": true,
 	"codesnap.backgroundColor": "#292E39",
-	// "github.copilot.editor.enableCodeActions": false,
-	// "github.copilot.editor.enableAutoCompletions": true,
-	// "github.copilot.enable": {
-	// 	"*": false,
-	// 	"markdown": false,
-	// 	"scminput": false
-	// },
 	"console-ninja.featureSet": "Community",
 	"[css]": {
 		"plaintext": false,
@@ -167,5 +160,5 @@
 	],
 	"explorer.fileNesting.expand": false,
 	"catppuccin-icons.hidesExplorerArrows": true,
-	// A Quick brown fox jumps over a lazy dog!
+	
 }
