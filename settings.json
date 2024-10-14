@@ -2,14 +2,12 @@
 	"workbench.iconTheme": "catppuccin-perfect-frappe",
 	"workbench.colorTheme": "One Nord",
 	"files.autoSave": "afterDelay",
-	"editor.formatOnSave": true,
 	"editor.fontSize": 19,
 	"editor.renderLineHighlight": "none",
 	"editor.scrollbar.horizontal": "hidden",
 	"editor.scrollbar.vertical": "hidden",
 	"editor.cursorBlinking": "smooth",
 	"editor.cursorStyle": "line",
-	"workbench.statusBar.visible": false,
 	"workbench.activityBar.location": "hidden",
 	"editor.scrollbar.verticalScrollbarSize": 0,
 	"editor.scrollbar.horizontalScrollbarSize": 0,
@@ -19,13 +17,11 @@
 	"editor.wordWrap": "off",
 	"editor.tabSize": 4,
 	"workbench.startupEditor": "newUntitledFile",
-	"editor.fontFamily": "Fira Code",
+	"editor.fontFamily": "Fira Code iScript",
 	"editor.fontLigatures": true,
 	"editor.fontWeight": "400",
 	"workbench.editor.labelFormat": "short",
 	"explorer.compactFolders": false,
-
-	"github.copilot.editor.enableCodeActions": false,
 	"editor.stickyScroll.enabled": false,
 	"workbench.colorCustomizations": {
 		"scrollbar.shadow": "#ffffff00",
@@ -45,24 +41,23 @@
 		".title-label>h2": "display:none",
 		".monaco-workbench .part>.composite.title>.title-actions": "display:flex;align-items:center;justify-content:start",
 		".monaco-icon-label": "display:flex;align-items:center;justify-content:center;",
-
 		".title.show-file-icons.title-border-bottom": "visibility: visible;background:linear-gradient(180deg, #2E3440, #292E39)!important",
 		".monaco-workbench .terminal-editor .terminal-wrapper": "background-color:#292E39; top:5px;",
 		".monaco-workbench>.notifications-toasts .codicon.codicon-info,.monaco-workbench>.notifications-center .codicon.codicon-info": "color: #EBCB8B !important;",
 		".monaco-highlighted-label": "font-size: 14px",
-		".shortcuts":"display:none;",
+		".shortcuts": "display:none;",
 		".letterpress": "background-image:url('/home/renan/.config/Code/cup-of-coffee.svg') !important;width:350px!important;",
-		".line-numbers.lh-even":"width:0!important;left:10px!important;",
-		".glyph-margin-widgets":"display:none;",
-		".monaco-editor .glyph-margin":"left:-100%;",
-		".quick-input-widget":"margin-top: 15%;box-shadow: rgba(0, 0, 0, .40) 0px 0px 70px 4px !important;",
-		"div.quick-input-box > div > div.monaco-inputbox.idle > div > input":"background-color:#2E3440 !important;padding:15px;font-size:20px;border-radius:10px;",
-		".monaco-inputbox.idle":"background-color:#2E3440 !important;border: none !important;outline-color:#81A1C1 !important;",
-		".monaco-list-row.focused":"background-color: #81A1C1 !important;",
-		"div.slider":"display:none !important",
-		"quick-input-list-row":"align-items:center;text-align:center;"
+		".line-numbers.lh-even": "width:0!important;left:10px!important;",
+		".glyph-margin-widgets": "display:none;",
+		".monaco-editor .glyph-margin": "left:-100%;",
+		".quick-input-widget": "margin-top: 15%;box-shadow: rgba(0, 0, 0, .40) 0px 0px 70px 4px !important;",
+		"div.quick-input-box > div > div.monaco-inputbox.idle > div > input": "background-color:#2E3440 !important;padding:15px;font-size:20px;border-radius:10px;",
+		".monaco-inputbox.idle": "background-color:#2E3440 !important;border: none !important;outline-color:#81A1C1 !important;",
+		".monaco-list-row.focused": "background:linear-gradient(90deg, #81A1C1 89%, #292E39 100%);",
+		"div.slider": "display:none !important",
+		"quick-input-list-row": "align-items:center;text-align:center;",
+		"div#workbench\\.parts\\.sidebar": "border-right:none!important;"
 	},
-
 	"rust-analyzer.lens.run.enable": false,
 	"rust-analyzer.hover.actions.run.enable": false,
 	"rust-analyzer.hover.actions.debug.enable": false,
@@ -77,48 +72,100 @@
 		"rustup": "rustc ${file} && tput reset && ./${fileBasenameNoExtension}",
 		"cargo run dev": "cargo fmt && cargo build && tput reset && ${workspaceFolder}/target/debug/${workspaceFolderBasename}",
 		"cargo run release": "cargo fmt && cargo build --release && tput reset && ${workspaceFolder}/target/release/${workspaceFolderBasename}",
+		"tauri dev": "cargo tauri dev",
 		"cpp": "g++ -o ${fileBasenameNoExtension}  ${fileBasename} -lsfml-graphics -lsfml-window -lsfml-system -lbox2d && ./${fileBasenameNoExtension}"
-
 	},
-	"command-runner.terminal.autoFocus": false,
+	"command-runner.terminal.autoFocus": true,
 	"command-runner.terminal.autoClear": true,
 	"terminal.integrated.accessibleViewFocusOnCommandExecution": true,
 	"command-runner.terminal.name": "CommandRunner",
 	"codesnap.showWindowTitle": true,
 	"codesnap.showLineNumbers": true,
 	"codesnap.backgroundColor": "#292E39",
-	"github.copilot.enable": {
-		"*": false,
-		"markdown": false,
-		"scminput": false
-	},
+	// "github.copilot.editor.enableCodeActions": false,
+	// "github.copilot.editor.enableAutoCompletions": true,
+	// "github.copilot.enable": {
+	// 	"*": false,
+	// 	"markdown": false,
+	// 	"scminput": false
+	// },
 	"console-ninja.featureSet": "Community",
 	"[css]": {
 		"plaintext": false,
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
 	},
 	"[html]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
 	},
 	"liveServer.settings.donotVerifyTags": true,
 	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
 	},
 	"prettier.tabWidth": 4,
 	"liveServer.settings.donotShowInfoMsg": true,
 	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
 	},
 	"git.enableSmartCommit": true,
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.patterns": {
 		".gitignore": ".git*",
-		"README.md": "LICENSE"
+		"README.md": "LICENSE",
+		"package.json": "vite.config.js, eslint.config.js,.gitignore,yarn.lock,README.md",
+		"*.jsx": "${basename}.*",
+		"*.tsx": "${basename}.*"
 	},
-	"window.menuBarVisibility": "toggle",
 	"workbench.editor.enablePreview": false,
 	"editor.codeActionWidget.includeNearbyQuickFixes": false,
-	"github.copilot.editor.enableAutoCompletions": true,
 	"editor.minimap.enabled": false,
-	"accessibility.hideAccessibleView": true
+	"accessibility.hideAccessibleView": true,
+	"window.menuBarVisibility": "toggle",
+	"[rust]": {
+		"editor.defaultFormatter": "rust-lang.rust-analyzer"
+	},
+	"update.mode": "default",
+	"files.exclude": {
+		".pnp*": true,
+		".vscode": true,
+		".yarn": true,
+		"**/vite-env.d.ts": true,
+		"node_modules": true
+	},
+	"emmet.triggerExpansionOnTab": true,
+	"files.associations": {
+		"*.jsx": "javascriptreact"
+	},
+	"liveServer.settings.NoBrowser": true,
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"explorer.confirmDelete": false,
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "always"
+	},
+	"workbench.statusBar.visible": false,
+	"css.lint.unknownAtRules": "ignore",
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": [
+					"comment",
+					"storage.type.class.js",
+					"storage.type.function"
+				],
+				"settings": {
+					"fontStyle": "italic",
+				}
+			}
+		]
+	},
+	"vscode_custom_css.imports": [
+		"file:///home/{USER}/.vscode.css"
+	],
+	"explorer.fileNesting.expand": false,
+	"catppuccin-icons.hidesExplorerArrows": true,
+	// A Quick brown fox jumps over a lazy dog!
 }
