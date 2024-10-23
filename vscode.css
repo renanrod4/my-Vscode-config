@@ -1,114 +1,148 @@
 .line-numbers {
-  font-size: 15px;
-  width: 0;
-}
-
-.label-description {
-  display: none;
-}
-
-.title-label > h2 {
-  display: none;
-}
-
-.monaco-workbench .part > .composite.title > .title-actions {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-
-.monaco-icon-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.title.show-file-icons.title-border-bottom {
-  visibility: visible;
-  background: linear-gradient(180deg, #2E3440, #292E39) !important;
-}
-
-.monaco-workbench .terminal-editor .terminal-wrapper {
-  background-color: #292E39;
-  top: 5px;
-}
-
-.monaco-workbench > .notifications-toasts .codicon.codicon-info,
-.monaco-workbench > .notifications-center .codicon.codicon-info {
-  color: #EBCB8B !important;
-}
-
-.monaco-highlighted-label {
-  font-size: 14px;
-}
-
-.shortcuts {
-  display: none;
-}
-
-.letterpress {
-  background-image: url('/home/renan/.config/Code/cup-of-coffee.svg') !important;
-  width: 350px !important;
-}
-
-.line-numbers.lh-even {
-  width: 0 !important;
-  left: 10px !important;
-}
-
-.glyph-margin-widgets {
-  display: none;
-}
-
-.monaco-editor .glyph-margin {
-  left: -100%;
-}
-
-.quick-input-widget {
-  margin-top: 15%;
-  box-shadow: rgba(0, 0, 0, .40) 0px 0px 70px 4px !important;
-}
-
-div.quick-input-box > div > div.monaco-inputbox.idle > div > input {
-  background-color: #2E3440 !important;
-  padding: 15px;
-  font-size: 20px;
-  border-radius: 10px;
-}
-
-.monaco-inputbox.idle {
-  background-color: #2E3440 !important;
-  border: none !important;
-  outline-color: #81A1C1 !important;
-}
-
-.monaco-list-row.focused {
-  background: linear-gradient(90deg, #81A1C1 89%, #292E39 100%);
-}
-
-div.slider {
-  display: none !important;
-}
-
-quick-input-list-row {
-  align-items: center;
-  text-align: center;
-}
-
-div#workbench\\.parts\\.sidebar {
-  border-right: none !important;
-}
-
-
-.comment {
-  font-family: 'Fira Code iScript', monospace !important;
-  font-style: italic !important;
-  color: #757575 !important;
-}
-
-.comment:not(.punctuation) {
-  font-family: 'Fira Code iScript', monospace !important;
-  font-style: italic !important;
-  color: #757575 !important;
-}
-/* A Quick brown fox jumps over a lazy dog! */
+    font-size: 15px;
+    width: 0;
+  }
+  .label-container>div>.monaco-icon-label-container:hover{
+    color: #cedbf6;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-right: 20px;
+  }
+  .monaco-icon-name-container,a.label-name,.monaco-highlighted-label,.monaco-icon-description-container>.label-description{
+    color: #cedbf6 !important;
+  }
+  /* .show-file-icons .css-lang-file-icon.file-icon::before */
+  /* .label-container>div>.monaco-icon-label:before */
+  .label-container>div:hover::before{
+    background-color: #2E3440 !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  
+    background-position: center;
+    padding-right: 15px;
+  }
+  
+  .title-label > h2 {
+    display: none;
+  }
+  
+  .monaco-workbench .part > .composite.title > .title-actions {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .monaco-icon-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .title.show-file-icons.title-border-bottom {
+    visibility: visible;
+    /* background: linear-gradient(180deg, #2E3440, #292E39) !important; */
+    background-color: #292E39!important;
+  }
+  
+  .monaco-workbench .terminal-editor .terminal-wrapper {
+    background-color: #292E39;
+    top: 5px;
+  }
+  
+  .monaco-workbench > .notifications-toasts .codicon.codicon-info,
+  .monaco-workbench > .notifications-center .codicon.codicon-info {
+    color: #EBCB8B !important;
+  }
+  
+  .monaco-highlighted-label {
+    font-size: 14px;
+  }
+  
+  .shortcuts {
+    display: none;
+  }
+  
+  .letterpress {
+    background-image: url('/home/renan/.config/Code/cup-of-coffee.svg') !important;
+    width: 350px !important;
+  }
+  
+  .line-numbers.lh-even {
+    width: 0 !important;
+    left: 10px !important;
+  }
+  
+  .glyph-margin-widgets {
+    display: none;
+  }
+  
+  .monaco-editor .glyph-margin {
+    left: -100%;
+  }
+  
+  .quick-input-widget {
+    margin-top: 15%;
+    box-shadow: rgba(0, 0, 0, .40) 0px 0px 70px 4px !important;
+  }
+  
+  div.quick-input-box > div > div.monaco-inputbox.idle > div > input {
+    background-color: #2E3440 !important;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  
+  .monaco-inputbox.idle {
+    background-color: #2E3440 !important;
+    border: none !important;
+    outline-color: #81A1C1 !important;
+  }
+  
+  /* .monaco-list-row.focused {
+    background: linear-gradient(90deg, #81A1C1 89%, #292E39 100%);
+  } */
+  
+  div.slider {
+    display: none !important;
+  }
+  
+  quick-input-list-row {
+    align-items: center;
+    text-align: center;
+  }
+  
+  div#workbench\\.parts\\.sidebar {
+    border-right: none !important;
+  }
+  
+  
+  .comment {
+    font-family: 'Fira Code iScript', monospace !important;
+    font-style: italic !important;
+    color: #757575 !important;
+  }
+  
+  .comment:not(.punctuation) {
+    font-family: 'Fira Code iScript', monospace !important;
+    font-style: italic !important;
+    color: #757575 !important;
+  }
+  /* A Quick brown fox jumps over a lazy dog! */
+  
+  div#workbench\.parts\.sidebar{
+    border: none !important;
+  }
+  .monaco-scrollable-element::before{
+    border: none !important;
+    outline: none !important;
+  }
+  /* .monaco-decoration-itemColor-kkyaq5{} /* Git modified color */
+  .monaco-decoration-itemColor--qbi6iu,.monaco-decoration-itemColor-r3gonq,.monaco-decoration-itemBadge-r3gonq::after{
+    color: #d28671 !important;
+  }
+  .monaco-tl-indent{
+    position: relative !important;
+  }
+  .codelens-decoration{
+    display: none !important;
+  }
